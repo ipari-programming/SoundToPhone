@@ -15,7 +15,7 @@ namespace SoundToPhone
     {
         public static void LoadWav(string fileName)
         {
-            using (WaveFileReader reader = new WaveFileReader("myfile.wav"))
+            using (WaveFileReader reader = new WaveFileReader(fileName))
             {
                 Assert.AreEqual(16, reader.WaveFormat.BitsPerSample, "Only works with 16 bit audio");
                 byte[] buffer = new byte[reader.Length];

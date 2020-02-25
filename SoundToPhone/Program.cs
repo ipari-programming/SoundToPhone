@@ -10,6 +10,7 @@ namespace SoundToPhone
     {
         static void Main(string[] args)
         {
+            IO.LoadWav("../../../telefon.wav");
         }
     }
 }
